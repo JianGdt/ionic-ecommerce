@@ -2,13 +2,11 @@ import React, { useState } from "react";
 import {
   IonButton,
   IonCard,
-  IonCardContent,
   IonCardHeader,
   IonCardSubtitle,
   IonCardTitle,
   IonContent,
   IonHeader,
-  IonModal,
   IonPage,
   IonTitle,
   IonToolbar,

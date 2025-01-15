@@ -10,9 +10,8 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { ellipse, square, home, cart, personCircle } from 'ionicons/icons';
+import { home, cart, personCircle } from 'ionicons/icons';
 import Home from './pages/Home';
-import Products from './pages/Products';
 import Tab3 from './pages/Profile';
 
 /* Core CSS required for Ionic components to work properly */

@@ -1,6 +1,4 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import './Tab1.css';
 import useFetch from '../hooks/useFetch';
 
 const Home: React.FC = () => {
@@ -19,7 +17,6 @@ const Home: React.FC = () => {
       </IonHeader>
       <IonContent>
       </IonContent>
-      <ExploreContainer name="Ionic React" />
     </IonPage>
   );
 };
