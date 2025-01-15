@@ -32,7 +32,7 @@ const Products: React.FC<ProductsProps> = ({ addToCart }) => {
     addToCart(product);
   };
 
-  const handleViewDetails = (product) => {
+  const handleViewDetails = (product: any) => {
     setSelectedProduct(product);
     setIsOpen(true);
   };
@@ -46,7 +46,7 @@ const Products: React.FC<ProductsProps> = ({ addToCart }) => {
       </IonHeader>
       <IonContent>
         {data.length > 0 &&
-          data.map((product) => (
+          data.map((product: any) => (
             <IonCard key={product.id}>
               <img src={product.image} alt={product.title} />
               <IonCardHeader>

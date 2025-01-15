@@ -20,7 +20,7 @@ import Products from "../pages/Products";
 import '../theme/main.css';
 
 function SideMenuNav() {
-  const [menuType, setMenuType] = useState("overlay");
+  const [menuType, setMenuType] = useState<"overlay" | "reveal" | "push">("overlay");
   const [cartItems, setCartItems] = useState<any[]>([]);
 
   console.log('cartItems', cartItems);
@@ -96,7 +96,7 @@ function SideMenuNav() {
         <IonHeader>
           <IonToolbar>
             <IonMenuToggle>
-              <IonButton class=''>
+              <IonButton>
                 <IonIcon aria-hidden="true" icon={cart} />
                 {cartItems.length > 0 && (
                   <IonBadge color="danger" slot="end">
