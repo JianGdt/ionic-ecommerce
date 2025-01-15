@@ -1,9 +1,12 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.ecommerce.app',
-  appName: 'ionic-ecommerce',
-  webDir: 'build'
+  appId: 'io.ionic.starter',
+  appName: 'ecommerce',
+  webDir: 'dist',
+  android: {
+    flavor: "qa",
+  },
 };
 
 export default config;

@@ -22,6 +22,18 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    flavorDimensions = ["environment"]
+productFlavors {
+  dev {
+      dimension "environment"
+      manifestPlaceholders = [displayName:"ecommerce"]
+  }
+  qa {
+      dimension "environment"
+      applicationIdSuffix ".qa"
+      manifestPlaceholders = [displayName:"ecommerce - QA"]
+  }
+}
 }
 
 repositories {
