@@ -4,6 +4,9 @@ const config: CapacitorConfig = {
   appId: 'io.ionic.starter',
   appName: 'ecommerce',
   webDir: 'dist',
+  server: {
+    androidScheme: 'https'
+  },
   android: {
     flavor: "qa",
   },
