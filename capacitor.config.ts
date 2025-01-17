@@ -7,20 +7,6 @@ const config: CapacitorConfig = {
   server: {
     androidScheme: 'https'
   },
-  android: {
-    flavor: "qa",
-  },
-  plugins: {
-    LiveUpdates: {
-      appId: 'c5c28a79',
-      channel: 'Production',
-      autoUpdateMethod: 'background',
-      maxVersions: 2
-    },
-    SplashScreen: {
-      launchAutoHide: false
-    }
-  }
 };
 
 export default config;
